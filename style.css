@@ -1,0 +1,120 @@
+/* Fonts and Colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('ship.png') no-repeat center center fixed; /* Replace 'blue.jpg' with your desired image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.5); /* 50% opacity for transparency */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    margin-top: 50px; /* Push the container down from the top */
+   /* border: 2px solid #ffffff; /* Olive border for emphasis */
+}
+
+h1 {
+    font-size: 2rem;
+    color:  #082544; /* Olive color for the heading */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #082544;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #555; /* Neutral dark gray for supporting text */
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000; /* Black for form labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    color: #000; /* Black text inside inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #3b5323; /* Olive focus border */
+    box-shadow: 0 0 5px rgba(59, 83, 35, 0.3);
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff; /* White text on button */
+    background:  #082544; /* Olive button background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background:  #082544; /* Darker olive for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#response {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none;
+}
+
+/* Additional Styling for a Polished Look */
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #777; /* Light gray for placeholder text */
+}
